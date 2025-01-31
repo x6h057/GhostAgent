@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/3ct0s/"><img src="/img/GhostAgent.png" width=600 weigth=500 alt="GhostAgent"></a>
+  <a href=""><img src="/img/GhostAgent.png" width=600 weigth=500 alt="GhostAgent"></a>
   <br>
   GhostAgent
   <br>
