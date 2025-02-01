@@ -10,7 +10,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Support-Windows-blue">
-    <img src="https://img.shields.io/badge/Version-1.0.0-blue">
+    <img src="https://img.shields.io/badge/Version-1.0.5-blue">
     <img src="https://img.shields.io/badge/Python-3.8.9-blue">
     <img src="https://img.shields.io/github/stars/x6h057/GhostAgent?style=social">
     <img src="https://img.shields.io/github/forks/x6h057/GhostAgent?style=social">
@@ -18,16 +18,52 @@
 
 ---
 
-## 👻 What is GhostAgent?
-GhostAgent is a malware generator that creates backdoors utilizing the **Discord platform as a C2 Server**.
+## ℹ️ Info  
+
+**GhostAgent** is a sophisticated **malware generator** designed to create backdoors that leverage the **Discord platform as a Command and Control (C2) server**.  
+It operates discreetly by establishing a hidden configuration directory: ```C:\Users\%USERPROFILE%\.config```.
+<br>This directory is used to store various artifacts, including:  
+- Uploaded files and directories  
+- Microphone recordings  
+- Agent identifiers  
+- Other operational data  
 
 ## ⚙️ How does it work?
 GhostAgent leverages libraries to enable an agent to act as a **Discord bot**. Attackers communicate with the bot to execute malicious commands on the target system.
 
 ## 🚀 Features
 ✅ Encrypted Traffic (**HTTPS**)
+<br>
 ✅ Customizable Configuration Settings
+<br>
 ✅ Support for Multiple Online Agents
+
+
+## ❓ Help Menu
+
+- **`/help`**: Shows the menu.
+- **`/interact <id>`**: Interact with a specific agent.
+- **`/background`**: Background your current agent.
+- **`/cmd <command>`**: Run command on target.
+- **`/cmd-all <command>`**: Run a command on all agents.
+- **`/cd <path>`**: Change current directory.
+- **`/webshot`**: Grab a picture from the webcam.
+- **`/processes`**: Get a list of all running processes.
+- **`/upload <url>`**: Upload file to agent.
+- **`/screenshot`**: Grab a screenshot from the agent.
+- **`/creds`**: Get chrome saved credentials.
+- **`/persistence`**: Enable persistence.
+- **`/list`**: Get a list of all active agents.
+- **`/download <path>`**: Download file from agent.
+- **`/terminate`**: Terminate the session.
+- **`/location`**: Get the location of the target machine.
+- **`/revshell <ip> <port>`**: Get a reverse shell on the target machine.
+- **`/recordmic <interval>`**: Record the microphone of the target machine.
+- **`/wallpaper <path/url>`**: Change the wallpaper of the target machine.
+- **`/killproc <pid>`**: Kill a process on the target machine.
+- **`/keylog <mode> <interval>`**: Start/Stop the keylog on the target machine.
+- **`/purge`**: Delete the agent and the reg keys.
+
 
 ## 📥 Installation
 ### Linux
