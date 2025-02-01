@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="/img/GhostAgent.png" width=600 weigth=500 alt="GhostAgent"></a>
+  <a href=""><img src="https://merlinmosaica.com/wp-content/uploads/2023/10/MM670-Halloween-Ghost.png" width=300 height=300 alt="GhostAgent"></a>
   <br>
   GhostAgent
   <br>
@@ -9,58 +9,61 @@
 <h4 align="center">GhostAgent Command and Control</h4>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Backdoor_Platform-Windows-blue">
-    <img src="https://img.shields.io/badge/Version-2.1.2-blue">
+    <img src="https://img.shields.io/badge/Support-Windows-blue">
+    <img src="https://img.shields.io/badge/Version-1.0.0-blue">
     <img src="https://img.shields.io/badge/Python-3.8.9-blue">
+    <img src="https://img.shields.io/github/stars/x6h057/GhostAgent?style=social">
+    <img src="https://img.shields.io/github/forks/x6h057/GhostAgent?style=social">
 </p>
 
 ---
 
-## What is GhostAgent?
+## 👻 What is GhostAgent?
+GhostAgent is a malware generator that creates backdoors utilizing the **Discord platform as a C2 Server**.
 
-GhostAgent is a malware generator that generates backdoors which use online platforms as C2s. This includes Discord, Telegram and Github. 
+## ⚙️ How does it work?
+GhostAgent leverages libraries to enable an agent to act as a **Discord bot**. Attackers communicate with the bot to execute malicious commands on the target system.
 
-Our goal is to prove that anything can be a C2, if you want to :) ...
+## 🚀 Features
+✅ Encrypted Traffic (**HTTPS**)
+✅ Customizable Configuration Settings
+✅ Support for Multiple Online Agents
 
-## How does it work?
-
-The GhostAgent backdoors are using libraries which allow the backdoor to act as a "Bot" for the above-mentioned platforms. Essentially the attacker contacts the bot and specifies a malicious command to execute on the target "Agent". 
-
-GhostAgent is equipped with a lot of features **some** of which are:
-- Encrypted traffic (HTTPS)
-- Running system commands on target Agent
-- Keylogger (Limited to Discord)
-- Grabbing webcam snaps
-- Multiple online agents at a time (Limited to Discord & GitHub)
-
-## Installation and Usage
-
-GhostAgent is better installed and used on Kali Linux:
+## 📥 Installation
+### Linux
+```bash
+git clone https://github.com/x6h057/GhostAgent.git
+cd ./GhostAgent
 ```
-git clone https://github.com/3ct0s/GhostAgent-c2
-cd ./GhostAgent-c2
+
+## 🔧 Setup
+```bash
+sudo su
 chmod +x setup.sh
 ./setup.sh
 ```
-Once this is done we can use the builder. Let's build a discord based C2 backdoor:
-```
-python builder.py
-use discord
-set name <backdoor-name>
-set guild-id <server id from discord>
-set bot-token <discord bot token>
-set channel-id <channel id from discord server>
+
+## 📌 Usage
+```bash
+sudo su  # Run as root always.
+python3 builder.py
+
+set name <agent-name>
+set server <server id from discord>
+set token <discord bot token>
+set channel <channel id from discord server>
 set webhook <discord webhook>
+set custom config
 build
 ```
 
-## How to Setup GhostAgent
-Since the setup process is very specific for each platform:
+## 👥 Contributors
+🔹 Credits: This project is inspired by the amazing open-source [Dystopia](https://github.com/3ct0s/dystopia-c2.git).  
+🔹 Feel free to open **issues** and **pull requests** to contribute! Bug reports, feature suggestions, and improvements are welcome.
 
-> Please follow the [setup guide](https://github.com/3ct0s/GhostAgent-c2/wiki/) to setup GhostAgent.
+## ⚠️ Disclaimer
+> **This repository is intended for educational purposes only.** The developer assumes **no responsibility** for misuse. **Unauthorized or illegal use is strictly prohibited.** Ensure compliance with all applicable laws before using this software.
 
-## Contributors
-Contributions are welcome to our GitHub repo! We value community involvement and appreciate all types of contributions, from bug reports to code. Join us in building something great and making a positive impact on the world. Get involved today!
+---
+<p align="center">⭐ If you like this project, consider starring it on GitHub!</p>
 
-## Disclaimer
-This github repository is made for educational purposes only. The developer is not responsible for any misuse of this software. **Do not use this software for illegal purposes.**
