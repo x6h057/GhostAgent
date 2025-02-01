@@ -148,7 +148,7 @@ try:
             print('\n[+] Building: [Started]\n')
 
             try:
-                with open("code/discord/bot.py", 'r') as f:
+                with open("Source/bot.py", 'r') as f:
                     file = f.read()
 
                 newfile = file.replace("{GUILD}", str(list[1]))
